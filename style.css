@@ -1,5 +1,9 @@
 /* CSS files add styling rules to your content */
 
+body {
+  overflow: hidden;
+}
+
 .bg {
   background-image: url('https://cdn.glitch.com/541a2516-ace5-42a1-9c3d-63a2c0a96759%2Fwip.gif?v=1604429394466');
 }
@@ -37,8 +41,9 @@
 /* About */
 
 .alby {
-    animation: slide-up 2s;
+    animation: slide-up 1s;
     animation-delay: 2s;
+    animation-timimg-function: ease-in-out;
     position: absolute;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -46,16 +51,12 @@
     left: -76px;
 }
 
-@keyframes slide-up {
-  0% {
-    bottom: -400px;
-  }
-
+@keyframes slide-up {\
   80% {
-    bottom: -4px;
+    transform: translate3d(0,-396px,0);
   }
   
   100% {
-    bottom: -4px;
+    transform: translate3d(0,-396px,0);
   }
 }
